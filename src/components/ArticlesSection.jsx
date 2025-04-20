@@ -15,7 +15,7 @@ const ArticlesSection = () => {
       image: article1,
       title: 'Délais de Paiement au Maroc 2025',
       description: 'Focus sur la Loi 69-21 et ses implications pour les entreprises au Maroc',
-      link: '/article/delais-de-paiement-2025',
+      link: '#/article/delais-de-paiement-2025',
       linkText: 'En savoir plus ›'
     },
     {
