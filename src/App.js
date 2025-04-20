@@ -21,7 +21,7 @@ function HomePage() {
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <Header />
         <Routes>
@@ -34,7 +34,7 @@ function App() {
           </div>
         </footer>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

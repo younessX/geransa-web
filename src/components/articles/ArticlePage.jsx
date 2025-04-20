@@ -41,25 +41,26 @@ const ArticlePage = () => {
             <p className="section-content">Le délai de paiement est calculé à compter de <strong>la date d'émission de la facture</strong>. Cette dernière doit être établie au plus tard le dernier jour du mois de la livraison des marchandises ou de l'exécution des travaux ou des prestations de services. Si la facture n'a pas été émise dans ce délai, le délai de paiement est calculé <strong>à partir de la fin du mois de la livraison ou de la prestation</strong>.</p>
             
             <div className="example-timeline">
-              <div className="timeline-item">
-                <div className="timeline-point"></div>
-                <div className="timeline-text">
-                  <p><strong>Date de livraison :</strong><br />10/07/2024</p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-point highlighted"></div>
-                <div className="timeline-text highlighted">
-                  <p><strong>Fin de mois :</strong><br />31/07/2024</p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-point"></div>
-                <div className="timeline-text">
-                  <p><strong>Date de facturation :</strong><br />02/08/2024</p>
-                </div>
+            <div className="timeline-line"></div>
+            <div className="timeline-item">
+              <div className="timeline-point"></div>
+              <div className="timeline-text">
+                <p><strong>Date de livraison :</strong><br />10/07/2024</p>
               </div>
             </div>
+            <div className="timeline-item">
+              <div className="timeline-point highlighted"></div>
+              <div className="timeline-text highlighted">
+                <p><strong>Fin de mois :</strong><br />31/07/2024</p>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-point"></div>
+              <div className="timeline-text">
+                <p><strong>Date de facturation :</strong><br />02/08/2024</p>
+              </div>
+            </div>
+          </div>
           </section>
 
           <section className="article-section">
@@ -233,7 +234,7 @@ const ArticlePage = () => {
 
         <div className="article-footer">
           <p className="author">Réalisé par: <strong>Abdessamad BALATIF</strong></p>
-          <a href="https://www.linkedin.com/in/abdessamad-balatif/" target="_blank" rel="noopener noreferrer" className="linkedin-link">
+          <a href="https://www.linkedin.com/in/abdessamad-balatif-a54361234" target="_blank" rel="noopener noreferrer" className="linkedin-link">
             <i className="fab fa-linkedin"></i> Consulter le profil LinkedIn
           </a>
         </div>
