@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/geransa-web/static/css/main.6432eb20.css",
-    "main.js": "/geransa-web/static/js/main.02cf5611.js",
+    "main.css": "/geransa-web/static/css/main.8b50c7ef.css",
+    "main.js": "/geransa-web/static/js/main.fc80605d.js",
     "static/media/technology.jpg": "/geransa-web/static/media/technology.9539e5346fdc662d5de4.jpg",
     "static/media/optimisation.jpg": "/geransa-web/static/media/optimisation.286bb7e0edb785dbf028.jpg",
     "static/media/communication.jpg": "/geransa-web/static/media/communication.3ec3cef75912d99b5283.jpg",
@@ -19,11 +19,11 @@
     "static/media/client-1.jpeg": "/geransa-web/static/media/client-1.e3680aeb066e0fa02070.jpeg",
     "static/media/logo_geransa.svg": "/geransa-web/static/media/logo_geransa.61839d4517841634d8aac362e18966bd.svg",
     "index.html": "/geransa-web/index.html",
-    "main.6432eb20.css.map": "/geransa-web/static/css/main.6432eb20.css.map",
-    "main.02cf5611.js.map": "/geransa-web/static/js/main.02cf5611.js.map"
+    "main.8b50c7ef.css.map": "/geransa-web/static/css/main.8b50c7ef.css.map",
+    "main.fc80605d.js.map": "/geransa-web/static/js/main.fc80605d.js.map"
   },
   "entrypoints": [
-    "static/css/main.6432eb20.css",
-    "static/js/main.02cf5611.js"
+    "static/css/main.8b50c7ef.css",
+    "static/js/main.fc80605d.js"
   ]
 }
