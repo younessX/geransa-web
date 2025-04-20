@@ -1,0 +1,352 @@
+/* ArticlePage.css */
+.article-page {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .article-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  }
+  
+  .article-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+  }
+  
+  .article-main-title {
+    font-size: 36px;
+    color: #1c4f82;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .article-subtitle {
+    font-size: 22px;
+    color: #3a4db3;
+    font-weight: 600;
+  }
+  
+  .logo-container {
+    text-align: center;
+    margin: 20px 0 40px;
+  }
+  
+  .company-logo {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .article-section {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    color: #1c4f82;
+    margin-bottom: 15px;
+    position: relative;
+    font-weight: 600;
+  }
+  
+  .section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #3a4db3;
+  }
+  
+  .subsection-title {
+    font-size: 20px;
+    color: #3a4db3;
+    margin: 25px 0 15px;
+    font-weight: 600;
+  }
+  
+  .section-content {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+  
+  .section-list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .section-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 15px;
+  }
+  
+  .section-list li:before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background-color: #3a4db3;
+    border-radius: 50%;
+  }
+  
+  .important-note {
+    background-color: #fef7ea;
+    border-left: 4px solid #e3a429;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .example-timeline {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .example-timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background-color: #3a4db3;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .timeline-item {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .timeline-point {
+    width: 20px;
+    height: 20px;
+    background-color: #3a4db3;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    border: 3px solid #fff;
+  }
+  
+  .timeline-point.highlighted {
+    background-color: #de2b4f;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0 0 0 3px rgba(222, 43, 79, 0.3);
+  }
+  
+  .timeline-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .timeline-text.highlighted {
+    font-weight: 700;
+    color: #de2b4f;
+  }
+  
+  .table-container {
+    margin: 30px 0;
+    overflow-x: auto;
+  }
+  
+  .table-title {
+    font-size: 18px;
+    color: #1c4f82;
+    margin-bottom: 15px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e1e1e1;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #e1e1e1;
+  }
+  
+  th {
+    background-color: #f2f6fc;
+    color: #1c4f82;
+    font-weight: 600;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .declaration-table th:not(:first-child),
+  .declaration-table td:not(:first-child) {
+    text-align: center;
+  }
+  
+  .table-note {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  .penalties li {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .penalties li strong {
+    color: #de2b4f;
+  }
+  
+  .case-analysis {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .case-analysis > li {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #3a4db3;
+  }
+  
+  .case-analysis ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .case-analysis ul li {
+    margin-bottom: 8px;
+  }
+  
+  .article-footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+  }
+  
+  .author {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    color: #0077b5;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .linkedin-link:hover {
+    text-decoration: underline;
+  }
+  
+  .linkedin-link i {
+    margin-right: 8px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .article-container {
+      max-width: 90%;
+      padding: 30px;
+    }
+    
+    .article-main-title {
+      font-size: 30px;
+    }
+    
+    .article-subtitle {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .article-page {
+      padding: 30px 0;
+    }
+    
+    .article-container {
+      padding: 20px;
+    }
+    
+    .article-main-title {
+      font-size: 26px;
+    }
+    
+    .article-subtitle {
+      font-size: 18px;
+    }
+    
+    .section-title {
+      font-size: 22px;
+    }
+    
+    .subsection-title {
+      font-size: 18px;
+    }
+    
+    .example-timeline {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+    }
+    
+    .example-timeline::before {
+      display: none;
+    }
+    
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .timeline-point {
+      margin: 0 15px 0 0;
+    }
+    
+    .timeline-text {
+      text-align: left;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .article-container {
+      max-width: 95%;
+      padding: 15px;
+    }
+    
+    table {
+      font-size: 14px;
+    }
+    
+    th, td {
+      padding: 8px 10px;
+    }
+  }
