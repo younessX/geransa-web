@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 // Import components
@@ -21,7 +21,7 @@ function HomePage() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Header />
         <Routes>
@@ -30,11 +30,11 @@ function App() {
         </Routes>
         <footer className="footer">
           <div className="container">
-            <p>&copy; {new Date().getFullYear()} Groupe OMF. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Société Geransa. All rights reserved.</p>
           </div>
         </footer>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
