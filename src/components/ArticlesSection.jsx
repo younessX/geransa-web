@@ -1,5 +1,6 @@
 import React from 'react';
 import './ArticlesSection.css';
+import { useNavigate } from 'react-router-dom';
 
 // Replace these with your actual article images
 import article1 from '../assets/article-1.jpeg';
@@ -9,13 +10,15 @@ import article4 from '../assets/article-4.jpeg';
 import article5 from '../assets/article-5.jpeg';
 
 const ArticlesSection = () => {
+  const navigate = useNavigate();
+  
   const articles = [
     {
       id: 1,
       image: article1,
       title: 'Délais de Paiement au Maroc 2025',
       description: 'Focus sur la Loi 69-21 et ses implications pour les entreprises au Maroc',
-      link: '#/article/delais-de-paiement-2025',
+      link: '/article/delais-de-paiement-2025',
       linkText: 'En savoir plus ›'
     },
     {
@@ -23,7 +26,7 @@ const ArticlesSection = () => {
       image: article2,
       title: 'Procédure simplifiée de fermeture des entreprises au Maroc',
       description: 'Procédure simplifiée de fermeture des entreprises au Maroc',
-      link: '#',
+      link: '/article/fermeture-entreprises',
       linkText: 'En savoir plus ›'
     },
     {
@@ -31,7 +34,7 @@ const ArticlesSection = () => {
       image: article3,
       title: 'Taux de change base de conversion des revenues en devises au cours de l\'année 2023',
       description: 'Taux de change base de conversion des revenues en devises au cours de l\'année 2023',
-      link: '#',
+      link: '/article/taux-change-2023',
       linkText: 'En savoir plus ›'
     },
     {
@@ -39,7 +42,7 @@ const ArticlesSection = () => {
       image: article4,
       title: 'Understanding Modern Business Strategies',
       description: 'Explore the latest trends and strategies in modern business management',
-      link: '#',
+      link: '/article/business-strategies',
       linkText: 'En savoir plus ›'
     },
     {
@@ -47,7 +50,7 @@ const ArticlesSection = () => {
       image: article5,
       title: 'Digital Transformation in 2024',
       description: 'How digital transformation is reshaping industries and creating new opportunities',
-      link: '#',
+      link: '/article/digital-transformation-2024',
       linkText: 'En savoir plus ›'
     }
   ];
@@ -59,11 +62,17 @@ const ArticlesSection = () => {
   }
 
   // Function to handle article click
-  const handleArticleClick = (articleId, link) => {
-    // For the first article, navigate to the article page
-    if (articleId === 1) {
-      window.location.href = link;
-    }
+  const handleArticleClick = (e, link) => {
+    e.preventDefault();
+    navigate(link);
+    
+    // Add a small delay before scrolling to ensure the DOM has been updated
+    setTimeout(() => {
+      const articleElement = document.getElementById('article-section');
+      if (articleElement) {
+        articleElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   return (
@@ -83,15 +92,9 @@ const ArticlesSection = () => {
                   <h3 className="article-title">{article.title}</h3>
                   <p className="article-description">{article.description}</p>
                   <a 
-                    href={article.link} 
+                    href={`#${article.link}`} 
                     className="article-link"
-                    onClick={(e) => {
-                      if (article.id === 1) {
-                        e.preventDefault();
-                        // This will redirect to the article page
-                        window.location.href = "/article/delais-de-paiement-2025";
-                      }
-                    }}
+                    onClick={(e) => handleArticleClick(e, article.link)}
                   >
                     {article.linkText}
                   </a>

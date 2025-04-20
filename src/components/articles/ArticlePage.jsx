@@ -234,7 +234,7 @@ const ArticlePage = () => {
 
         <div className="article-footer">
           <p className="author">Réalisé par: <strong>Abdessamad BALATIF</strong></p>
-          <a href="https://www.linkedin.com/in/abdessamad-balatif-a54361234" target="_blank" rel="noopener noreferrer" className="linkedin-link">
+          <a href="https://www.linkedin.com/in/abdessamad-balatif/" target="_blank" rel="noopener noreferrer" className="linkedin-link">
             <i className="fab fa-linkedin"></i> Consulter le profil LinkedIn
           </a>
         </div>
