@@ -1,11 +1,14 @@
 // Header.jsx
 import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Header.css'
 import logoImage from '../assets/logo_geransa.svg';
 import opcaLogo from '../assets/opca_logo.png';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,30 +25,50 @@ const Header = () => {
     };
   }, []);
 
-  // Function to scroll to top (for Accueil and Logo)
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+  // Function to navigate home and scroll to top
+  const navigateHome = () => {
+    if (location.pathname !== '/') {
+      navigate('/');
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
   };
 
   // Function to scroll to a specific element by ID with offset for header height
   const scrollToElement = (elementId) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      // Get the element's position
-      const elementPosition = element.getBoundingClientRect().top;
-      // Get the header height (you may need to adjust this value)
-      const headerOffset = 100; // Adjust this value based on your header height
-      // Calculate the final scroll position
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      
-      // Scroll to the adjusted position
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+    // First navigate to home if not already there
+    if (location.pathname !== '/') {
+      navigate('/');
+      // We need to wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(elementId);
+        if (element) {
+          const elementPosition = element.getBoundingClientRect().top;
+          const headerOffset = 100;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }, 100);
+    } else {
+      // If already on home page, just scroll
+      const element = document.getElementById(elementId);
+      if (element) {
+        const elementPosition = element.getBoundingClientRect().top;
+        const headerOffset = 100;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
     }
   };
 
@@ -87,17 +110,17 @@ const Header = () => {
       {/* Main navigation */}
       <div className="main-nav">
         <div className="container">
-          <div className="logo primary-logo" onClick={scrollToTop} style={{ cursor: 'pointer' }}>
-            <img src={logoImage} alt="GENERANSA OMF" className="logo-image" />
+          <div className="logo primary-logo" onClick={navigateHome} style={{ cursor: 'pointer' }}>
+            <img src={logoImage} alt="GENERANSA" className="logo-image" />
           </div>
           
           <nav className="nav-menu">
             <ul>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); scrollToTop(); }}>ACCUEIL</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); navigateHome(); }}>ACCUEIL</a></li>
               <li><a href="#qui-sommes-nous" onClick={(e) => { e.preventDefault(); scrollToElement('qui-sommes-nous'); }}>QUI SOMMES-NOUS?</a></li>
               <li><a href="#services-section" onClick={(e) => { e.preventDefault(); scrollToElement('services-section'); }}>SERVICES</a></li>
               <li><a href="#clients-section" onClick={(e) => { e.preventDefault(); scrollToElement('clients-section'); }}>NOS CLIENTS</a></li>
-              <li><a href="#article-section" onClick={(e) => { e.preventDefault(); scrollToElement('article-section'); }}>ARTICLES</a></li>
+              <li><a href="#parent-article-section" onClick={(e) => { e.preventDefault(); scrollToElement('parent-article-section'); }}>ARTICLES</a></li>
             </ul>
           </nav>
           

@@ -95,7 +95,12 @@ function App() {
         </Routes>
         <footer className="footer">
           <div className="container">
-            <p>&copy; {new Date().getFullYear()} Société Geransa. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} Geransa. Tous droits réservés. | Développé par 
+              <a href="https://nerdsdev.pro/" target="_blank" rel="noopener noreferrer">
+              &nbsp;&nbsp;NerdsDev
+              </a>
+            </p>
           </div>
         </footer>
       </div>

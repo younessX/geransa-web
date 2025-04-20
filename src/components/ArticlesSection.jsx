@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom';
 
 // Replace these with your actual article images
 import article1 from '../assets/article-1.jpeg';
-import article2 from '../assets/article-2.png';
+import article2 from '../assets/article-5.jpeg';
 import article3 from '../assets/article-3.jpeg';
 import article4 from '../assets/article-4.jpeg';
-import article5 from '../assets/article-5.jpeg';
+import article5 from '../assets/article-2.png';
 
 const ArticlesSection = () => {
   const navigate = useNavigate();

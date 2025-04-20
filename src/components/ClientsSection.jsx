@@ -28,13 +28,13 @@ const ClientsSection = () => {
       { 
         src: clientLogo3, 
         alt: 'Client 3',
-        customStyle: { width: '150px', height: '75px' },
+        customStyle: { width: '150px', height: '120px' },
         containerStyle: { width: '210px', height: '120px' }
       },
       { 
         src: clientLogo4, 
         alt: 'Client 4',
-        customStyle: { width: '180px', height: '120px' }, // Larger size example
+        customStyle: { width: '210px', height: '200px' }, // Larger size example
         containerStyle: { width: '210px', height: '120px' } // Container matches logo size
       },
       { 

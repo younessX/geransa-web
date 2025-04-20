@@ -14,6 +14,31 @@
   position: relative;
 }
 
+/* Add Transitions.css file */
+body {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+.page-transition {
+  opacity: 0.7;
+  transform: translateY(10px);
+}
+
+
+.App > div {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.hero-section {
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Top Bar Styles */
 .top-bar {
   background-color: var(--dark-bg);
@@ -28,7 +53,7 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .contact-info {
@@ -88,7 +113,7 @@
 /* Main Navigation Styles */
 .main-nav {
   background-color: rgba(255, 255, 255, 0.95);
-  padding: 25px 0;
+  padding: 12px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 10;
@@ -126,7 +151,8 @@
 
 /* Make OPCA logo smaller than GERANSA logo */
 .certification-image {
-  max-height: 45px; /* Reduced from 60px to make it noticeably smaller */
+  width: 50px;
+  max-height: 40px; /* Reduced from 60px to make it noticeably smaller */
 }
 
 /* Nav menu centering */
@@ -287,7 +313,7 @@
   }
   
   .certification-image {
-    min-width: 120px; /* Proportionally smaller than main logo */
+    min-width: 80px; /* Proportionally smaller than main logo */
   }
 }
 
@@ -309,7 +335,7 @@
   }
   
   .certification-image {
-    max-height: 40px; /* Reduced proportionally */
+    max-height: 50px; /* Reduced proportionally */
   }
   
   .primary-logo {
