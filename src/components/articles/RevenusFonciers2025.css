@@ -1,0 +1,396 @@
+/* RevenusFonciers2025.css */
+.article-page {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .article-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  }
+  
+  .article-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+  }
+  
+  .article-main-title {
+    font-size: 32px;
+    color: #1c4f82;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  
+  .article-subtitle {
+    font-size: 22px;
+    color: #d9534f;
+    font-weight: 600;
+  }
+  
+  .logo-container {
+    text-align: center;
+    margin: 20px 0 40px;
+  }
+  
+  .company-logo {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .article-section {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    color: #d9534f;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
+  }
+  
+  .section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #d9534f;
+  }
+  
+  .subsection-title {
+    font-size: 20px;
+    color: #1c4f82;
+    margin: 25px 0 15px;
+    font-weight: 600;
+  }
+  
+  .section-content {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .highlight-text {
+    color: #1c4f82;
+    font-weight: 600;
+  }
+  
+  .section-list {
+    padding-left: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .section-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 5px;
+  }
+  
+  .section-list li:before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background-color: #d9534f;
+    border-radius: 50%;
+  }
+  
+  /* Table Styles */
+  .table-container {
+    margin: 25px 0;
+    overflow-x: auto;
+  }
+  
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 10px;
+  }
+  
+  .comparison-table th {
+    background-color: #1c4f82;
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    padding: 12px 15px;
+    border: 1px solid #0c3c6d;
+  }
+  
+  .comparison-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #e1e1e1;
+  }
+  
+  .comparison-table tr:nth-child(even) {
+    background-color: #f5f8fc;
+  }
+  
+  .comparison-table tr.highlighted-row {
+    background-color: #f9f5ff;
+  }
+  
+  .highlight-cell {
+    font-weight: 700;
+    color: #d9534f;
+  }
+  
+  .table-note {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+  }
+  
+  /* Conclusion Box */
+  .conclusion-box {
+    background-color: #f5f8fc;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 25px 0;
+    border-left: 4px solid #1c4f82;
+  }
+  
+  .conclusion-box.advantage {
+    background-color: #f9f5ff;
+    border-left: 4px solid #d9534f;
+  }
+  
+  .conclusion-text {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+  }
+  
+  /* Calculation Steps */
+  .calculation-steps {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  .calculation-list {
+    list-style-type: none;
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .calculation-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .calculation-list li:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #1c4f82;
+  }
+  
+  .calculation-formula {
+    background-color: #f0f5fc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left: 3px solid #1c4f82;
+    margin: 15px 0;
+    font-weight: 500;
+  }
+  
+  /* Summary Box */
+  .summary-box {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 30px 0;
+    border: 1px solid #e1e1e1;
+  }
+  
+  .summary-title {
+    color: #1c4f82;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .column h4 {
+    color: #d9534f;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  
+  .summary-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .summary-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .summary-list li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #1c4f82;
+    font-weight: bold;
+  }
+  
+  /* Subsection */
+  .subsection {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #e1e1e1;
+  }
+  
+  .subsection:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  /* Footer */
+  .article-footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+  }
+  
+  .author {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    color: #0077b5;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .linkedin-link:hover {
+    text-decoration: underline;
+  }
+  
+  .linkedin-link i {
+    margin-right: 8px;
+  }
+  
+  .page-number {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .article-container {
+      max-width: 90%;
+      padding: 30px;
+    }
+    
+    .article-main-title {
+      font-size: 28px;
+    }
+    
+    .article-subtitle {
+      font-size: 20px;
+    }
+    
+    .two-columns {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .article-page {
+      padding: 30px 0;
+    }
+    
+    .article-container {
+      padding: 20px;
+    }
+    
+    .article-main-title {
+      font-size: 24px;
+    }
+    
+    .article-subtitle {
+      font-size: 18px;
+    }
+    
+    .section-title {
+      font-size: 22px;
+    }
+    
+    .subsection-title {
+      font-size: 18px;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+    
+    .calculation-steps {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .article-container {
+      max-width: 95%;
+      padding: 15px;
+    }
+    
+    .comparison-table {
+      font-size: 13px;
+    }
+    
+    .calculation-formula {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+    
+    .summary-box {
+      padding: 15px;
+    }
+  }

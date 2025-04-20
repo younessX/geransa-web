@@ -1,5 +1,5 @@
 // ServicesSection.jsx
-import React from 'react';
+import React, { useRef } from 'react';
 import './ServicesSection.css';
 import gestionImg from '../assets/gestion.jpg';
 import optimisationImg from '../assets/optimisation.jpg';
@@ -9,128 +9,131 @@ import communicationImg from '../assets/communication.jpg';
 import technologieImg from '../assets/technology.jpg';
 
 const ServicesSection = () => {
+  // Create refs for each service card
+  const creationRef = useRef(null);
+  const gestionRef = useRef(null);
+  const optimisationRef = useRef(null);
+  const formationRef = useRef(null);
+  const conseilRef = useRef(null);
+  const technologieRef = useRef(null);
+
+  // Function to scroll to a specific ref
+  const scrollToService = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
-    <section className="services-section">
+    <section className="services-section" id="qui-sommes-nous">
       <div className="container">
         {/* Company Introduction - Updated to be centered */}
         <div className="company-intro">
           <div className="intro-content">
-            <h1 className="intro-title">LA SOCIÉTÉ<span> GERANSA</span></h1>
+            <h1 className="intro-title"><span> GERANSA</span></h1>
             <p className="intro-tagline">
-              Nous pouvons vous aider à prendre des mesures décisives et à obtenir des résultats durables.
+              Notre mission est de vous offrir des solutions comptables personnalisées, durables et adaptées à votre situation.
             </p>
             <p className="intro-description">
-              Le Groupe OMF est le partenaire de référence des chefs d'entreprise qui souhaitent être accompagnés dans leurs missions quotidiennes afin d'assurer des prestations de qualité sur l'ensemble de leur chaîne de valeur, et ce, en dépit des mutations du marché.
+              Notre cabinet comptable agréé est dirigé par une équipe d'associés hautement qualifiés, animés par une volonté commune : offrir un accompagnement fiable, rigoureux et adapté aux besoins spécifiques de chaque client.
             </p>
             
-            <div className="services-nav">
+            <div className="services-nav" id="services-section">
               <ul>
-                <li><span className="check-icon"></span> Gestion</li>
-                <li><span className="check-icon"></span> Optimisation</li>
-                <li><span className="check-icon"></span> Formation</li>
-                <li><span className="check-icon"></span> Conseil</li>
-                <li><span className="check-icon"></span> Communication</li>
-                <li><span className="check-icon"></span> Technologie</li>
+                <li onClick={() => scrollToService(creationRef)}><span className="check-icon"></span>Création d'entreprise</li>
+                <li onClick={() => scrollToService(gestionRef)}><span className="check-icon"></span> Gestion</li>
+                <li onClick={() => scrollToService(optimisationRef)}><span className="check-icon"></span> Optimisation</li>
+                <li onClick={() => scrollToService(formationRef)}><span className="check-icon"></span> Formation</li>
+                <li onClick={() => scrollToService(conseilRef)}><span className="check-icon"></span> Conseil</li>
+                <li onClick={() => scrollToService(technologieRef)}><span className="check-icon"></span> Technologie</li>
               </ul>
             </div>
           </div>
         </div>
         
-        {/* Services Cards Grid - Unchanged */}
+        {/* Services Cards Grid - Updated with refs */}
         <div className="services-grid">
+          
+          {/* creation online Card */}
+          <div className="service-card" ref={creationRef} id="creation-service">
+            <div className="card-image">
+              <img src={communicationImg} alt="Création d'entreprise" />
+            </div>
+            <div className="card-content">
+              <h3 className="card-title">Création d'entreprise</h3>
+              <p className="card-description">
+                Créez votre entreprise <span className="highlight-online">EN LIGNE</span> en seulement 
+                <span className="highlight-time"> 48H</span>, avec un processus simplifié et sans tracas. 
+                Nous nous occupons de toutes les démarches légales pour vous, de manière rapide et efficace.
+              </p>
+            </div>
+          </div>
+
           {/* Gestion Card */}
-          <div className="service-card">
+          <div className="service-card" ref={gestionRef} id="gestion-service">
             <div className="card-image">
               <img src={gestionImg} alt="Gestion" />
             </div>
             <div className="card-content">
               <h3 className="card-title">Gestion</h3>
               <p className="card-description">
-                Nous vous accompagnons dans toutes les activités visant à planifier, organiser, coordonner et contrôler les ressources de votre entreprise afin d'atteindre vos objectifs.
+                Nous vous assistons dans l'ensemble des démarches de planification, d'organisation, de coordination et de gestion des ressources de votre entreprise, afin d'assurer l'atteinte de vos objectifs
               </p>
-              <a href="#" className="learn-more">
-                EN SAVOIR PLUS <span className="arrow-icon"></span>
-              </a>
             </div>
           </div>
           
           {/* Optimisation Card */}
-          <div className="service-card">
+          <div className="service-card" ref={optimisationRef} id="optimisation-service">
             <div className="card-image">
               <img src={optimisationImg} alt="Optimisation" />
             </div>
             <div className="card-content">
-              <h3 className="card-title">Optimisation</h3>
+              <h3 className="card-title">Optimisation fiscale</h3>
               <p className="card-description">
-                Notre objectif est de maximiser l'utilisation efficace et efficiente des ressources disponibles dans votre entreprise, telles que le talent, les compétences, le temps et les finances, afin d'en améliorer les résultats. Cela inclut la mise en œuvre de processus performants.
+                Notre objectif est de maximiser les opportunités d'optimisation fiscale de votre entreprise en élaborant des stratégies personnalisées et en déployant des processus conformes à la réglementation, afin de réduire efficacement votre charge fiscale et sécuriser vos économies d'impôt.
               </p>
-              <a href="#" className="learn-more">
-                EN SAVOIR PLUS <span className="arrow-icon"></span>
-              </a>
             </div>
           </div>
           
           {/* Formation Card */}
-          <div className="service-card">
+          <div className="service-card" ref={formationRef} id="formation-service">
             <div className="card-image">
               <img src={formationImg} alt="Formation" />
             </div>
             <div className="card-content">
               <h3 className="card-title">Formation</h3>
               <p className="card-description">
-                La formation présente plusieurs avantages pour les salariés, les entreprises et la société dans son ensemble, elle contribue à aider les salariés à mieux comprendre les procédures de leur entreprise et améliorer leur performance.
+                Nous proposons des formations spécialisées pour votre entreprises, visant à améliorer la compréhension des processus comptables, fiscaux et financiers. Nos programmes sont conçus pour aider les équipes à optimiser leur gestion financière, à accroître leur efficacité et à assurer la conformité aux normes en vigueur.
               </p>
-              <a href="#" className="learn-more">
-                EN SAVOIR PLUS <span className="arrow-icon"></span>
-              </a>
             </div>
           </div>
           
           {/* Conseil Card */}
-          <div className="service-card">
+          <div className="service-card" ref={conseilRef} id="conseil-service">
             <div className="card-image">
               <img src={conseilImg} alt="Conseil" />
             </div>
             <div className="card-content">
               <h3 className="card-title">Conseil</h3>
               <p className="card-description">
-                Nos consultants experts vous accompagnent pour identifier les opportunités, analyser les défis et proposer des solutions adaptées qui contribuent à la croissance et à la pérennité de votre entreprise.
+                Nos experts vous accompagnent pour saisir les opportunités, relever les défis et mettre en place des solutions sur mesure, au service de la croissance durable de votre entreprise.
               </p>
-              <a href="#" className="learn-more">
-                EN SAVOIR PLUS <span className="arrow-icon"></span>
-              </a>
-            </div>
-          </div>
-          
-          {/* Communication Card */}
-          <div className="service-card">
-            <div className="card-image">
-              <img src={communicationImg} alt="Communication" />
-            </div>
-            <div className="card-content">
-              <h3 className="card-title">Communication</h3>
-              <p className="card-description">
-                Nous développons des stratégies de communication efficaces pour renforcer votre image de marque, engager vos clients et optimiser votre présence sur le marché, tant en interne qu'en externe.
-              </p>
-              <a href="#" className="learn-more">
-                EN SAVOIR PLUS <span className="arrow-icon"></span>
-              </a>
             </div>
           </div>
           
           {/* Technologie Card */}
-          <div className="service-card">
+          <div className="service-card" ref={technologieRef} id="technologie-service">
             <div className="card-image">
               <img src={technologieImg} alt="Technologie" />
             </div>
             <div className="card-content">
               <h3 className="card-title">Technologie</h3>
               <p className="card-description">
-                Nous vous aidons à intégrer les solutions technologiques adaptées à vos besoins pour optimiser vos processus, améliorer l'efficacité opérationnelle et favoriser l'innovation au sein de votre organisation.
+                Nous vous accompagnons dans l'intégration de solutions technologiques sur mesure pour optimiser vos processus, gagner en efficacité et stimuler l'innovation.
               </p>
-              <a href="#" className="learn-more">
-                EN SAVOIR PLUS <span className="arrow-icon"></span>
-              </a>
             </div>
           </div>
         </div>

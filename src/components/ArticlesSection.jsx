@@ -24,33 +24,33 @@ const ArticlesSection = () => {
     {
       id: 2,
       image: article2,
-      title: 'Procédure simplifiée de fermeture des entreprises au Maroc',
-      description: 'Procédure simplifiée de fermeture des entreprises au Maroc',
-      link: '/article/fermeture-entreprises',
+      title: 'Loi de Finances 2025: Véhicules de tourisme',
+      description: 'Ce qu\'il faut savoir sur le traitement fiscal des véhicules de tourisme',
+      link: '/article/loi-finances-vehicules-2025',
       linkText: 'En savoir plus ›'
     },
     {
       id: 3,
       image: article3,
-      title: 'Taux de change base de conversion des revenues en devises au cours de l\'année 2023',
-      description: 'Taux de change base de conversion des revenues en devises au cours de l\'année 2023',
-      link: '/article/taux-change-2023',
+      title: 'Changements sur les revenus fonciers 2025',
+      description: 'Taux libératoire et détermination du revenu foncier imposable',
+      link: '/article/revenus-fonciers-2025',
       linkText: 'En savoir plus ›'
     },
     {
       id: 4,
       image: article4,
-      title: 'Understanding Modern Business Strategies',
-      description: 'Explore the latest trends and strategies in modern business management',
-      link: '/article/business-strategies',
+      title: 'Revenus Salariaux et Assimilés 2025',
+      description: 'Changements apportés par le PLF 2025 sur les Revenus Salariaux',
+      link: '/article/revenus-salariaux-assimiles-2025',
       linkText: 'En savoir plus ›'
     },
     {
       id: 5,
       image: article5,
-      title: 'Digital Transformation in 2024',
-      description: 'How digital transformation is reshaping industries and creating new opportunities',
-      link: '/article/digital-transformation-2024',
+      title: 'SMIG et SMAG 2025',
+      description: 'Changements à venir et impact sur les salaires dans le secteur privé',
+      link: '/article/revenus-salariaux-2025',
       linkText: 'En savoir plus ›'
     }
   ];

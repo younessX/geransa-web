@@ -5,7 +5,7 @@ import './ClientsSection.css';
 import clientLogo1 from '../assets/client-1.jpeg';
 import clientLogo2 from '../assets/client-2.png';
 import clientLogo3 from '../assets/client-3.png';
-import clientLogo4 from '../assets/client-4.jpg';
+import clientLogo4 from '../assets/client-4.jpeg';
 import clientLogo5 from '../assets/client-5.png';
 // Add more imports as needed
 

@@ -1,0 +1,292 @@
+/* LoiFinances2025Vehicules.css */
+.article-page {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .article-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  }
+  
+  .article-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+  }
+  
+  .article-main-title {
+    font-size: 36px;
+    color: #1c4f82;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .article-subtitle {
+    font-size: 22px;
+    color: #3a4db3;
+    font-weight: 600;
+  }
+  
+  .logo-container {
+    text-align: center;
+    margin: 20px 0 40px;
+  }
+  
+  .company-logo {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .article-section {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    color: #1c4f82;
+    margin-bottom: 15px;
+    position: relative;
+    font-weight: 600;
+  }
+  
+  .section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #3a4db3;
+  }
+  
+  .subsection-title {
+    font-size: 20px;
+    color: #3a4db3;
+    margin: 25px 0 15px;
+    font-weight: 600;
+  }
+  
+  .section-content {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+  
+  .section-list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .section-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 15px;
+  }
+  
+  .section-list li:before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background-color: #3a4db3;
+    border-radius: 50%;
+  }
+  
+  .important-note {
+    background-color: #fef7ea;
+    border-left: 4px solid #e3a429;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  /* Styles spécifiques pour l'article Loi de Finances 2025 */
+  .highlight-section {
+    background-color: #f6f9ff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e0e7f5;
+  }
+  
+  .highlight-box {
+    background-color: #e9f0ff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border-left: 4px solid #3a4db3;
+  }
+  
+  .highlight-text {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #1c4f82;
+  }
+  
+  .highlight-text:last-child {
+    margin-bottom: 0;
+  }
+  
+  .source-note {
+    font-style: italic;
+    color: #666;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed #ddd;
+    font-size: 14px;
+  }
+  
+  .case-study {
+    background-color: #f9f9f9;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+    border-left: 4px solid #d9534f;
+  }
+  
+  .case-details {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+  }
+  
+  .case-details p {
+    margin: 5px 0;
+  }
+  
+  .calculation-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .calculation-step {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+  }
+  
+  .calculation-step h4 {
+    color: #d9534f;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .calculation-step p {
+    margin: 8px 0;
+  }
+  
+  .article-footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+  }
+  
+  .author {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    color: #0077b5;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .linkedin-link:hover {
+    text-decoration: underline;
+  }
+  
+  .linkedin-link i {
+    margin-right: 8px;
+  }
+  
+  .hashtag {
+    color: #666;
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .article-container {
+      max-width: 90%;
+      padding: 30px;
+    }
+    
+    .article-main-title {
+      font-size: 30px;
+    }
+    
+    .article-subtitle {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .article-page {
+      padding: 30px 0;
+    }
+    
+    .article-container {
+      padding: 20px;
+    }
+    
+    .article-main-title {
+      font-size: 26px;
+    }
+    
+    .article-subtitle {
+      font-size: 18px;
+    }
+    
+    .section-title {
+      font-size: 22px;
+    }
+    
+    .subsection-title {
+      font-size: 18px;
+    }
+  
+    .highlight-box {
+      padding: 15px;
+    }
+  
+    .case-study {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .article-container {
+      max-width: 95%;
+      padding: 15px;
+    }
+    
+    .highlight-text {
+      font-size: 16px;
+    }
+  
+    .calculation-step {
+      padding: 12px;
+    }
+  }

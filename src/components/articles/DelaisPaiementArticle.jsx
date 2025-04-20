@@ -1,5 +1,5 @@
 import React from 'react';
-import './ArticlePage.css';
+import './DelaisPaiementArticle.css';
 import geransaLogo from '../../assets/logo_geransa.svg'; // Import your logo
 
 const ArticlePage = () => {
@@ -143,8 +143,13 @@ const ArticlePage = () => {
                     <td>0,85 % par mois supplémentaire</td>
                   </tr>
                   <tr>
-                    <td>À partir du 1er décembre 2024</td>
+                    <td>1er Décembre - 28 février 2025</td>
                     <td>2.5 %</td>
+                    <td>0,85 % par mois supplémentaire</td>
+                  </tr>
+                  <tr>
+                    <td>À partir du 1er Mars 2025</td>
+                    <td>2.25 %</td>
                     <td>0,85 % par mois supplémentaire</td>
                   </tr>
                 </tbody>
@@ -234,7 +239,7 @@ const ArticlePage = () => {
 
         <div className="article-footer">
           <p className="author">Réalisé par: <strong>Abdessamad BALATIF</strong></p>
-          <a href="https://www.linkedin.com/in/abdessamad-balatif/" target="_blank" rel="noopener noreferrer" className="linkedin-link">
+          <a href="https://www.linkedin.com/in/abdessamad-balatif-a54361234" target="_blank" rel="noopener noreferrer" className="linkedin-link">
             <i className="fab fa-linkedin"></i> Consulter le profil LinkedIn
           </a>
         </div>
