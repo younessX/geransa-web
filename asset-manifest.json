@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b50c7ef.css",
-    "main.js": "/static/js/main.d99da872.js",
-    "static/media/technology.jpg": "/static/media/technology.9539e5346fdc662d5de4.jpg",
-    "static/media/optimisation.jpg": "/static/media/optimisation.286bb7e0edb785dbf028.jpg",
-    "static/media/communication.jpg": "/static/media/communication.3ec3cef75912d99b5283.jpg",
-    "static/media/gestion.jpg": "/static/media/gestion.f2a9f941771aea53fc84.jpg",
-    "static/media/formation.jpg": "/static/media/formation.5ccd114138ff92433f9b.jpg",
-    "static/media/conseil.jpg": "/static/media/conseil.1b15ac60e83418650929.jpg",
-    "static/media/article-3.jpeg": "/static/media/article-3.8eecaf65a43ea38c8d94.jpeg",
-    "static/media/article-4.jpeg": "/static/media/article-4.6e82ccd7bbad7b05fcb7.jpeg",
-    "static/media/article-1.jpeg": "/static/media/article-1.8d0a3119506032427cbb.jpeg",
-    "static/media/opca_logo.png": "/static/media/opca_logo.072c95327c3e45b37e66.png",
-    "static/media/article-2.png": "/static/media/article-2.4676f53aaca7112e2d56.png",
-    "static/media/article-5.jpeg": "/static/media/article-5.26b3a86dfe7fd10cc9a0.jpeg",
-    "static/media/client-3.png": "/static/media/client-3.2b15e4f2f196d6b53900.png",
-    "static/media/client-4.jpeg": "/static/media/client-4.b99119835715f160dbb8.jpeg",
-    "static/media/client-1.jpeg": "/static/media/client-1.e3680aeb066e0fa02070.jpeg",
-    "static/media/logo_geransa.svg": "/static/media/logo_geransa.61839d4517841634d8aac362e18966bd.svg",
-    "index.html": "/index.html",
-    "main.8b50c7ef.css.map": "/static/css/main.8b50c7ef.css.map",
-    "main.d99da872.js.map": "/static/js/main.d99da872.js.map"
+    "main.css": "/geransa-web/static/css/main.8b50c7ef.css",
+    "main.js": "/geransa-web/static/js/main.fc80605d.js",
+    "static/media/technology.jpg": "/geransa-web/static/media/technology.9539e5346fdc662d5de4.jpg",
+    "static/media/optimisation.jpg": "/geransa-web/static/media/optimisation.286bb7e0edb785dbf028.jpg",
+    "static/media/communication.jpg": "/geransa-web/static/media/communication.3ec3cef75912d99b5283.jpg",
+    "static/media/gestion.jpg": "/geransa-web/static/media/gestion.f2a9f941771aea53fc84.jpg",
+    "static/media/formation.jpg": "/geransa-web/static/media/formation.5ccd114138ff92433f9b.jpg",
+    "static/media/conseil.jpg": "/geransa-web/static/media/conseil.1b15ac60e83418650929.jpg",
+    "static/media/article-3.jpeg": "/geransa-web/static/media/article-3.8eecaf65a43ea38c8d94.jpeg",
+    "static/media/article-4.jpeg": "/geransa-web/static/media/article-4.6e82ccd7bbad7b05fcb7.jpeg",
+    "static/media/article-1.jpeg": "/geransa-web/static/media/article-1.8d0a3119506032427cbb.jpeg",
+    "static/media/opca_logo.png": "/geransa-web/static/media/opca_logo.072c95327c3e45b37e66.png",
+    "static/media/article-2.png": "/geransa-web/static/media/article-2.4676f53aaca7112e2d56.png",
+    "static/media/article-5.jpeg": "/geransa-web/static/media/article-5.26b3a86dfe7fd10cc9a0.jpeg",
+    "static/media/client-3.png": "/geransa-web/static/media/client-3.2b15e4f2f196d6b53900.png",
+    "static/media/client-4.jpeg": "/geransa-web/static/media/client-4.b99119835715f160dbb8.jpeg",
+    "static/media/client-1.jpeg": "/geransa-web/static/media/client-1.e3680aeb066e0fa02070.jpeg",
+    "static/media/logo_geransa.svg": "/geransa-web/static/media/logo_geransa.61839d4517841634d8aac362e18966bd.svg",
+    "index.html": "/geransa-web/index.html",
+    "main.8b50c7ef.css.map": "/geransa-web/static/css/main.8b50c7ef.css.map",
+    "main.fc80605d.js.map": "/geransa-web/static/js/main.fc80605d.js.map"
   },
   "entrypoints": [
     "static/css/main.8b50c7ef.css",
-    "static/js/main.d99da872.js"
+    "static/js/main.fc80605d.js"
   ]
 }
