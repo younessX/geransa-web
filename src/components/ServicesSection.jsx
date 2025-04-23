@@ -44,8 +44,8 @@ const ServicesSection = () => {
             <div className="services-nav" id="services-section">
               <ul>
                 <li onClick={() => scrollToService(creationRef)}><span className="check-icon"></span>Création d'entreprise</li>
-                <li onClick={() => scrollToService(gestionRef)}><span className="check-icon"></span> Gestion</li>
-                <li onClick={() => scrollToService(optimisationRef)}><span className="check-icon"></span> Optimisation</li>
+                <li onClick={() => scrollToService(gestionRef)}><span className="check-icon"></span> Travaux juridique</li>
+                <li onClick={() => scrollToService(optimisationRef)}><span className="check-icon"></span> Travaux de comptabilité</li>
                 <li onClick={() => scrollToService(formationRef)}><span className="check-icon"></span> Formation</li>
                 <li onClick={() => scrollToService(conseilRef)}><span className="check-icon"></span> Conseil</li>
                 <li onClick={() => scrollToService(technologieRef)}><span className="check-icon"></span> Technologie</li>
@@ -66,22 +66,21 @@ const ServicesSection = () => {
               <h3 className="card-title">Création d'entreprise</h3>
               <p className="card-description">
                 Créez votre entreprise <span className="highlight-online">EN LIGNE</span> en seulement 
-                <span className="highlight-time"> 48H</span>, avec un processus simplifié et sans tracas. 
+                <span className="highlight-time"> 72H</span>, avec un processus simplifié et sans tracas. 
                 Nous nous occupons de toutes les démarches légales pour vous, de manière rapide et efficace.
               </p>
             </div>
           </div>
 
-          {/* Gestion Card */}
-          <div className="service-card" ref={gestionRef} id="gestion-service">
+          {/* Travaux juridique */}
+          <div className="service-card" ref={gestionRef} id="travaux-juridique">
             <div className="card-image">
               <img src={gestionImg} alt="Gestion" />
             </div>
             <div className="card-content">
-              <h3 className="card-title">Gestion</h3>
+              <h3 className="card-title">Travaux juridique</h3>
               <p className="card-description">
-                Nous vous assistons dans l'ensemble des démarches de planification, d'organisation, de coordination et de gestion des ressources de votre entreprise, afin d'assurer l'atteinte de vos objectifs
-              </p>
+              Bénéficiez également de nos services juridiques pour accompagner votre entreprise à chaque étape : rédaction de contrats, statuts, pactes d'associés, conseils en droit des affaires, et bien plus encore. Un accompagnement fiable, professionnel et rapide.               </p>
             </div>
           </div>
           
@@ -91,9 +90,9 @@ const ServicesSection = () => {
               <img src={optimisationImg} alt="Optimisation" />
             </div>
             <div className="card-content">
-              <h3 className="card-title">Optimisation fiscale</h3>
+              <h3 className="card-title">Travaux de comptabilité</h3>
               <p className="card-description">
-                Notre objectif est de maximiser les opportunités d'optimisation fiscale de votre entreprise en élaborant des stratégies personnalisées et en déployant des processus conformes à la réglementation, afin de réduire efficacement votre charge fiscale et sécuriser vos économies d'impôt.
+              Confiez-nous vos travaux de comptabilité pour une gestion rigoureuse et conforme de vos finances : tenue de livres, déclarations fiscales, bilans, situations comptables, et bien plus. Un accompagnement précis, fiable et adapté à votre activité.
               </p>
             </div>
           </div>

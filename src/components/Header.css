@@ -347,54 +347,69 @@ html {
   }
 }
 
+/* Mobile-specific fixes */
 @media (max-width: 768px) {
   .top-bar .container {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 10px;
   }
   
   .contact-info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    display: none; /* Hide address on mobile to save space */
   }
   
   .social-media {
-    margin-top: 10px;
+    margin: 0;
+    gap: 10px;
   }
   
-  /* Fixed mobile layout to ensure primary logo is at the top */
+  /* Ensure main-nav properly handles both logos */
   .main-nav .container {
-    display: grid;
-    grid-template-areas: 
-      "primary-logo"
-      "nav-menu"
-      "certification-logo";
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
   }
   
   .primary-logo {
-    grid-area: primary-logo;
+    flex: 0 0 auto;
     margin: 0;
-    justify-self: center;
-  }
-  
-  .nav-menu {
-    grid-area: nav-menu;
-    width: 100%;
-    margin: 15px 0;
+    order: 1;
+    display: flex !important;
+    justify-content: flex-start;
+    min-width: 120px; /* Ensure space for the logo */
   }
   
   .certification-logo {
-    grid-area: certification-logo;
+    flex: 0 0 auto;
     margin: 0;
-    justify-self: center;
+    order: 3;
+    display: flex !important;
+    justify-content: flex-end;
+  }
+  
+  .nav-menu {
+    flex: 0 0 100%;
+    order: 2;
+    margin: 15px 0 5px;
   }
   
   .nav-menu ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+  }
+  
+  /* Force logo visibility */
+  .logo-image {
+    display: block !important;
+    max-height: 50px;
+    width: auto;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
   
   .hero-section {
@@ -404,17 +419,11 @@ html {
   .hero-title {
     font-size: 3rem;
   }
-  
-  .logo-image {
-    max-height: 60px; /* Ensure GERANSA logo is visible on smaller devices */
-  }
-  
-  .certification-image {
-    max-height: 35px; /* Keep proportionally smaller */
-  }
 }
 
+/* Extra small devices (phones, 576px and down) */
 @media (max-width: 576px) {
+  /* Existing styles remain the same */
   .social-media {
     flex-wrap: wrap;
     justify-content: center;
@@ -428,25 +437,51 @@ html {
     font-size: 1.2rem;
   }
   
-  /* Keep GERANSA logo prominent on small screens */
+  /* Modified layout for main-nav */
+  .main-nav .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+  }
+  
   .primary-logo {
-    margin-bottom: 10px;
+    order: 1;
+    min-width: 115px;
+    margin: 0 auto 10px;
+    text-align: center;
+  }
+  
+  .nav-menu {
+    order: 2;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .certification-logo {
+    order: 3;
+    margin: 10px auto 0;
+    text-align: center;
   }
   
   .logo-image {
-    max-height: 50px;
+    max-height: 30px;
+    margin: 0 auto;
+    display: block;
   }
   
   .certification-image {
-    max-height: 30px;
+    max-height: 20px;
+    max-width: 90px;
+    display: block;
+    margin: 0 auto;
   }
   
   .nav-menu ul {
-    gap: 8px;
+    gap: 5px;
   }
   
   .nav-menu a {
-    font-size: 13px;
-    padding: 8px 0;
+    font-size: 12px;
+    padding: 5px 0;
   }
 }

@@ -120,16 +120,6 @@ const RevenusSalariauxAssimiles2025 = () => {
                 <li>Augmentation du plafond des réductions familiales : <strong>2 160 DH → 3 000 DH</strong> annuels</li>
               </ul>
             </div>
-            
-            <div className="share-container">
-              <h3 className="share-title">N'hésitez pas à partager !</h3>
-              <div className="share-icons">
-                <span className="share-icon heart">♡</span>
-                <span className="share-icon comment">○</span>
-                <span className="share-icon forward">⇝</span>
-                <span className="share-icon save">□</span>
-              </div>
-            </div>
           </section>
         </div>
 
@@ -138,7 +128,6 @@ const RevenusSalariauxAssimiles2025 = () => {
           <a href="https://www.linkedin.com/in/abdessamad-balatif-a54361234" target="_blank" rel="noopener noreferrer" className="linkedin-link">
             <i className="fab fa-linkedin"></i> Consulter le profil LinkedIn
           </a>
-          <p className="page-number">Page 3 sur 3</p>
         </div>
       </div>
     </div>

@@ -2378,11 +2378,6 @@
   resolved "https://registry.npmjs.org/@xtuc/long/-/long-4.2.2.tgz"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-Router@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/Router/-/Router-2.1.0.tgz#52e4298a91645d45b33167648ae0cf386c84d6e4"
-  integrity sha512-v0XXrQhWi3VXZGwNitB2t5ypx83gYGtwuLwD1UVGVWrYO20WTOQ8RbkMxh62Ol4D+w6oMlKkEmZyri+mUUhU/A==
-
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.6"
   resolved "https://registry.npmjs.org/abab/-/abab-2.0.6.tgz"
