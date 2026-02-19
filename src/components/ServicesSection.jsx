@@ -14,8 +14,8 @@ const ServicesSection = () => {
   const gestionRef = useRef(null);
   const optimisationRef = useRef(null);
   const formationRef = useRef(null);
-  const conseilRef = useRef(null);
   const technologieRef = useRef(null);
+  const visaRef = useRef(null);
 
   // Function to scroll to a specific ref
   const scrollToService = (ref) => {
@@ -47,8 +47,8 @@ const ServicesSection = () => {
                 <li onClick={() => scrollToService(gestionRef)}><span className="check-icon"></span> Travaux juridique</li>
                 <li onClick={() => scrollToService(optimisationRef)}><span className="check-icon"></span> Travaux de comptabilité</li>
                 <li onClick={() => scrollToService(formationRef)}><span className="check-icon"></span> Formation</li>
-                <li onClick={() => scrollToService(conseilRef)}><span className="check-icon"></span> Conseil</li>
                 <li onClick={() => scrollToService(technologieRef)}><span className="check-icon"></span> Technologie</li>
+                <li onClick={() => scrollToService(visaRef)}><span className="check-icon"></span> Visa des attestations des délais de paiement</li>
               </ul>
             </div>
           </div>
@@ -110,19 +110,6 @@ const ServicesSection = () => {
             </div>
           </div>
           
-          {/* Conseil Card */}
-          <div className="service-card" ref={conseilRef} id="conseil-service">
-            <div className="card-image">
-              <img src={conseilImg} alt="Conseil" />
-            </div>
-            <div className="card-content">
-              <h3 className="card-title">Conseil</h3>
-              <p className="card-description">
-                Nos experts vous accompagnent pour saisir les opportunités, relever les défis et mettre en place des solutions sur mesure, au service de la croissance durable de votre entreprise.
-              </p>
-            </div>
-          </div>
-          
           {/* Technologie Card */}
           <div className="service-card" ref={technologieRef} id="technologie-service">
             <div className="card-image">
@@ -132,6 +119,18 @@ const ServicesSection = () => {
               <h3 className="card-title">Technologie</h3>
               <p className="card-description">
                 Nous vous accompagnons dans l'intégration de solutions technologiques sur mesure pour optimiser vos processus, gagner en efficacité et stimuler l'innovation.
+              </p>
+            </div>
+          </div>
+          {/* Visa des attestations Card */}
+          <div className="service-card" ref={visaRef} id="visa-service">
+            <div className="card-image">
+              <img src={conseilImg} alt="Visa des attestations des délais de paiement" />
+            </div>
+            <div className="card-content">
+              <h3 className="card-title">Visa des attestations des délais de paiement</h3>
+              <p className="card-description">
+                Nous prenons en charge l'établissement, la vérification et le visa de vos attestations des délais de paiement pour garantir leur conformité réglementaire et sécuriser vos obligations légales.
               </p>
             </div>
           </div>

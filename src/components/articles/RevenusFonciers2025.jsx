@@ -1,6 +1,6 @@
 import React from 'react';
 import './RevenusFonciers2025.css';
-import geransaLogo from '../../assets/logo_geransa.svg'; // Import your logo
+import geransaLogo from '../../assets/Logo h.png';
 
 const RevenusFonciers2025 = () => {
   return (

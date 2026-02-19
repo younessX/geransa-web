@@ -99,9 +99,13 @@ html {
   padding: 8px 15px;
   border-radius: 4px;
   font-weight: 600;
+  font-size: 14px;
   cursor: pointer;
   transition: var(--transition);
   margin-left: 15px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
 }
 
 .contact-btn:hover {
@@ -144,7 +148,7 @@ html {
 }
 
 .logo-image {
-  max-height: 80px;
+  max-height: 45px;
   width: auto;
   display: block;
 }
@@ -274,7 +278,7 @@ html {
 }
 
 .header.scrolled .logo-image {
-  max-height: 70px; /* Slightly smaller logo when header is scrolled */
+  max-height: 40px; /* Slightly smaller logo when header is scrolled */
   transition: max-height 0.3s ease;
 }
 
@@ -417,7 +421,15 @@ html {
   }
   
   .hero-title {
-    font-size: 3rem;
+    font-size: 2.2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .nav-menu a {
+    font-size: 12px;
   }
 }
 
@@ -428,13 +440,13 @@ html {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
-  
+
   .hero-tagline {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   
   /* Modified layout for main-nav */

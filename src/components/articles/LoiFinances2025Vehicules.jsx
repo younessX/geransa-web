@@ -1,6 +1,6 @@
 import React from 'react';
 import './LoiFinances2025Vehicules.css';
-import geransaLogo from '../../assets/logo_geransa.svg'; // Import your logo
+import geransaLogo from '../../assets/Logo h.png';
 
 const LoiFinances2025Vehicules = () => {
   return (
