@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c92e5f3.css",
-    "main.js": "/static/js/main.fbaab97c.js",
+    "main.css": "/static/css/main.02d04a9a.css",
+    "main.js": "/static/js/main.e624f5b5.js",
     "static/media/technology.jpg": "/static/media/technology.9539e5346fdc662d5de4.jpg",
     "static/media/optimisation.jpg": "/static/media/optimisation.286bb7e0edb785dbf028.jpg",
     "static/media/communication.jpg": "/static/media/communication.3ec3cef75912d99b5283.jpg",
@@ -10,20 +10,19 @@
     "static/media/conseil.jpg": "/static/media/conseil.1b15ac60e83418650929.jpg",
     "static/media/article-3.jpeg": "/static/media/article-3.8eecaf65a43ea38c8d94.jpeg",
     "static/media/article-4.jpeg": "/static/media/article-4.6e82ccd7bbad7b05fcb7.jpeg",
+    "static/media/Logo h.png": "/static/media/Logo h.441da4f2edc7efbd7df2.png",
     "static/media/article-1.jpeg": "/static/media/article-1.8d0a3119506032427cbb.jpeg",
     "static/media/opca_logo.png": "/static/media/opca_logo.072c95327c3e45b37e66.png",
     "static/media/article-2.png": "/static/media/article-2.4676f53aaca7112e2d56.png",
     "static/media/article-5.jpeg": "/static/media/article-5.26b3a86dfe7fd10cc9a0.jpeg",
     "static/media/client-3.png": "/static/media/client-3.2b15e4f2f196d6b53900.png",
-    "static/media/client-4.jpeg": "/static/media/client-4.b99119835715f160dbb8.jpeg",
     "static/media/client-1.jpeg": "/static/media/client-1.e3680aeb066e0fa02070.jpeg",
-    "static/media/logo_geransa.svg": "/static/media/logo_geransa.61839d4517841634d8aac362e18966bd.svg",
     "index.html": "/index.html",
-    "main.6c92e5f3.css.map": "/static/css/main.6c92e5f3.css.map",
-    "main.fbaab97c.js.map": "/static/js/main.fbaab97c.js.map"
+    "main.02d04a9a.css.map": "/static/css/main.02d04a9a.css.map",
+    "main.e624f5b5.js.map": "/static/js/main.e624f5b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c92e5f3.css",
-    "static/js/main.fbaab97c.js"
+    "static/css/main.02d04a9a.css",
+    "static/js/main.e624f5b5.js"
   ]
 }
